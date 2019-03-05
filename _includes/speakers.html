@@ -1,0 +1,328 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<style type="text/css">
+
+  #cubeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #cubeWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #cubes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .head {
+    text-align: center;
+  }
+  .head h1 {
+    font-weight: 400;
+    position: relative;
+  }
+  .head h1:before, .head h1:after {
+    content: "";
+    height: 1px;
+    width: 150px;
+    background: #aaa;
+    display: block;
+    position: absolute;
+    top: 50%;
+  }
+  .head h1:before {
+    left: 0;
+  }
+  .head h1:after {
+    right: 0;
+  }
+
+  .moreTeam {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .moreTeam a {
+    color: #444;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+  }
+  .moreTeam a svg {
+    padding-left: 5px;
+  }
+  .moreTeam a:hover {
+    background: #ddd;
+  }
+
+  .cube {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .cube .name {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    text-shadow: 0 1px 3px #000;
+    z-index: 3;
+  }
+  .cube .name h1 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .cube .name p {
+    color: #fff;
+    margin: 0;
+    font-size: 12px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .cube .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 2;
+  }
+  .cube .content ul {
+    padding: 0;
+    margin: 0 0 55px 0;
+    cursor: default;
+    text-align: center;
+  }
+  .cube .content ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 11.05px 10px 11.05px;
+    top: 40px;
+    position: relative;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  .cube .content ul li a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  .cube .content ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .cube:hover .content {
+    opacity: 1;
+  }
+  .cube:hover .content li {
+    top: 15px;
+    opacity: 1;
+    transition: 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  .cube:hover .content li:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .cube:hover .content li:nth-child(3) {
+    transition-delay: 0.4s;
+  }
+  .cube:hover .content li:nth-child(4) {
+    transition-delay: 0.6s;
+  }
+  .cube:hover .content h1 {
+    top: 0;
+  }
+  .cube:hover .content p {
+    top: 10px;
+  }
+  .cube:hover .innerBorder {
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+  }
+  .cube:hover .darken {
+    opacity: 1;
+  }
+  .cube:last-child, .cube:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .darken {
+    background: rgba(38, 50, 56, 0.85);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  .innerBorder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #fff;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+
+</style>
+<div id="cubeContainer">
+	<div id="cubeWrapper">
+		<div class="head">
+			<h1>Speakers we've seen here</h1>
+		</div>
+		<div id="cubes">
+      <div class="cube p1" style="background: url(https://pbs.twimg.com/profile_images/829838112780066816/jtvZOOz8_400x400.jpg) center; background-size: 160% 160%; background-position: -30px 0px;">
+				<div class="name">
+					<h1>Greg Dreyfus</h1>
+					<p>Platform Architects Manager</p>
+          <img src="https://azuqua.com/wp-content/uploads/2017/07/zendesk_logo-144233a085473800ebb7a87d556c4f7c445dd3acd11ab3a761a1c061b8b78773.png" alt="Zendesk" height="25">
+				</div>
+				<div class="innerBorder"></div>
+				<div class="darken"></div>
+				<div class="content">
+					<ul>
+            <li><a href="https://twitter.com/GR3GD"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="https://www.linkedin.com/in/gregdreyfus/"><span class="fab fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+			</div>
+      <div class="cube p1" style="background: url(https://pbs.twimg.com/profile_images/921435137144905728/R-3X2-61_400x400.jpg) center; background-size: 160% 160%; background-position: -30px -50px;">
+				<div class="name">
+					<h1>Jonathan Lima</h1>
+					<p>Engineering Lead</p>
+          <img src="https://brex.com/static/logo-5a9a377ec71868f4c94ae6788c3e0554.png" alt="Twitch" height="25">
+				</div>
+				<div class="innerBorder"></div>
+				<div class="darken"></div>
+				<div class="content">
+					<ul>
+            <li><a href="https://twitter.com/gboxmuchacho"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="https://www.linkedin.com/in/jglmarques/"><span class="fab fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+			</div>
+      <div class="cube p1" style="background: url(http://2019.sunshinephp.com/img/speakers/amrita_jain.png) center; background-size: 100% 100%;">
+				<div class="name">
+					<h1>Amrita Jain</h1>
+					<p>Senior Engineering Manager</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twitch_logo.svg/2000px-Twitch_logo.svg.png" alt="Twitch" height="25">
+				</div>
+				<div class="innerBorder"></div>
+				<div class="darken"></div>
+				<div class="content">
+					<ul>
+            <li><a href="https://twitter.com/amritajain973"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="https://www.linkedin.com/in/amritajain/"><span class="fab fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="cube p1" style="background: url(https://scontent-lax3-2.xx.fbcdn.net/v/t31.0-8/15110891_1357217577664428_7783182812574009730_o.jpg?_nc_cat=102&_nc_ht=scontent-lax3-2.xx&oh=1800b614a7ea52cc4b7320877097e5bf&oe=5D1BFBB9) center; background-size: 140% 140%;">
+				<div class="name">
+					<h1>Alex Goncalves</h1>
+					<p>Software Engineering Manager</p>
+          <img src="https://www.spieringsoptiek.nl/wp-content/uploads/2015/12/Facebook-Logo-PNG-Clipart.png" alt="Facebook" height="15">
+				</div>
+				<div class="innerBorder"></div>
+				<div class="darken"></div>
+				<div class="content">
+					<ul>
+						<li><a href="https://www.linkedin.com/in/alexgoncalves/"><span class="fab fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="cube p3" style="background: url(https://i.imgur.com/nJiA4WB.png) center; background-size: 100% 100%;">
+				<div class="name">
+					<h1>Jigyasa</h1>
+          <p>Red Hat Women Award 2017</p>
+          <img src="https://sguru.org/wp-content/uploads/2018/02/Twitter_2010_logo_-_from_Commons.svg_.png" alt="Twitter" height="15">
+				</div>
+				<div class="innerBorder"></div>
+				<div class="darken"></div>
+				<div class="content">
+					<ul>
+            <li><a href="https://twitter.com/jigyasa_grover"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="https://www.linkedin.com/in/jigyasa-grover/"><span class="fab fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="cube p4" style="background: url(https://pbs.twimg.com/profile_images/926317298696073216/AUlhVDzE_400x400.jpg) center; background-size: 100% 100%;">
+				<div class="name">
+					<h1>Sameera</h1>
+					<p>Engineering Leader</p>
+          <img src="https://ballerina.io/img/ballerina-logo.png" alt="Ballerina" height="15">
+				</div>
+				<div class="innerBorder"></div>
+				<div class="darken"></div>
+				<div class="content">
+					<ul>
+						<li><a href="https://twitter.com/sameerajayasoma"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="https://www.linkedin.com/in/sameerajayasoma/"><span class="fab fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="cube p5" style="background: url(https://i.imgur.com/KAlEmie.png) center; background-size: 100% 100%;">
+				<div class="name">
+					<h1>Neto Marin</h1>
+					<p>Senior Developer Advocate</p>
+          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png" alt="Google" height="25">
+				</div>
+				<div class="innerBorder"></div>
+				<div class="darken"></div>
+				<div class="content">
+					<ul>
+            <li><a href="https://twitter.com/netomarin"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="https://www.linkedin.com/in/netomarin/"><span class="fab fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="cube p6" style="background: url(https://i.imgur.com/lJA2Yzi.png) center; background-size: 100% 100%;">
+				<div class="name">
+					<h1>Anjana Fernando</h1>
+					<p>Director and Architect</p>
+          <img src="https://upload.wikimedia.org/wikipedia/en/5/56/WSO2_Software_Logo.png" alt="WSO2" height="25">
+				</div>
+				<div class="innerBorder"></div>
+				<div class="darken"></div>
+				<div class="content">
+					<ul>
+            <li><a href="https://twitter.com/lafernando"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="https://www.linkedin.com/in/anjana-fernando-32517b8/"><span class="fab fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

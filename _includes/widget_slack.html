@@ -1,0 +1,32 @@
+<style type="text/css">
+  .join-button {
+      font-size: 12px;
+      height: 25px;
+      padding: 0 10px 0 25px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+  }
+  .slackbadge_container .button, .button, .invite-box-wrapper .button {
+      background: #E14562;
+      color: #ffffff;
+      text-transform: none;
+      font-weight: normal;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      position: relative;
+  }
+  .join-button:after {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(https://www.codingblocks.net/wp-content/plugins/invitations-for-slack/invitations-for-slack/assets/icon.svg);
+    background-size: contain;
+    content: ' ';
+    position: absolute;
+    left: 5px;
+    top: 80%;
+    transform: translateY(-100%);
+}
+</style>
+<a href="http://bit.ly/GoToSlack"><button class="join-button button">Join us on Slack!</button></a>
