@@ -102,4 +102,9 @@ input[type=submit] {
   .align-center {
     text-align:center !important;
   }
+  .head h1:before, .head h1:after {
+    content: "";
+    height: 0px;
+    width: 0px !important;
+  }
 }
