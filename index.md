@@ -70,6 +70,14 @@ Wanna keep updated about our next events? Sign up!
 
 {% include widget_slack.html %}
 
+<h3>Call for Papers and Volunteers</h3>
+
+Want to be one of our <b>amazing</b> next speakers, sign up <a href="https://goo.gl/forms/6oGFUz0qRdgM2G2g1">here</a>.
+
+<br>
+
+Want to help our community to grow? <a href="https://goo.gl/forms/6oGFUz0qRdgM2G2g1">Be a volunteer</a>.
+
 </div>
 </div>
 
