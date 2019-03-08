@@ -62,15 +62,15 @@ Wanna keep updated about our next events? Sign up!
 
 {% include widget_twitter.html %}
 
-</div>
-
-<div class="col-md-4">
+<br>
 
 <h3>Join our Slack group</h3>
 
 {% include widget_slack.html %}
 
-<br><br>
+</div>
+
+<div class="col-md-4">
 
 <h3>Call for Papers</h3>  
 
@@ -79,6 +79,8 @@ Want to be one of our <b>amazing</b> next speakers, sign up <a href="https://goo
 <br><br>
 
 Want to help our community to <b>grow</b>? Be a <a href="https://goo.gl/forms/6oGFUz0qRdgM2G2g1">volunteer</a>.
+
+<br><br>
 
 </div>
 </div>
