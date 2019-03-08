@@ -70,9 +70,7 @@ Wanna keep updated about our next events? Sign up!
 
 <br><br>
 
-<h3>Call for Papers</h3>
-
-<br>
+<h3>Call for Papers</h3>  
 
 Want to be one of our <b>amazing</b> next speakers, sign up <a href="https://goo.gl/forms/6oGFUz0qRdgM2G2g1">here</a>.
 
