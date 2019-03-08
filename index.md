@@ -50,6 +50,8 @@ title: Bay Area Meetup Tech Series
 
 Wanna keep updated about our next events? Sign up!
 
+<br>
+
 {% include widget_sendgrid.html %}
 
 </div>
