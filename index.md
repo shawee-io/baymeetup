@@ -52,8 +52,6 @@ Wanna keep updated about our next events? Sign up!
 
 {% include widget_sendgrid.html %}
 
-{% include widget_meetup.html %}
-
 </div>
 
 <div class="col-md-4">
@@ -70,7 +68,7 @@ Wanna keep updated about our next events? Sign up!
 
 {% include widget_slack.html %}
 
-<br>
+<br><br>
 
 <h3>Call for Papers</h3>
 
