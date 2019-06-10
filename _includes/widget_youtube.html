@@ -1,23 +1,37 @@
-<div class="iframe-container">
-  <iframe width="750" height="315" src="https://www.youtube.com/embed/xYGKb9iwbtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id="videos-youtube-slick"> 
+  <div class="iframe-container">
+    <iframe width="750" height="315" src="https://www.youtube.com/embed/xYGKb9iwbtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="iframe-container">
+    <iframe width="750" height="315" src="https://www.youtube.com/embed/1-cYJrsbTwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="iframe-container">
+    <iframe width="750" height="315" src="https://www.youtube.com/embed/JjXgdGN10kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="iframe-container">
+    <iframe width="750" height="315" src="https://www.youtube.com/embed/vGs1Hfh7HFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="iframe-container">
+    <iframe width="750" height="315" src="https://www.youtube.com/embed/Mv8ode8Yt5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="iframe-container">
+    <iframe width="750" height="315" src="https://www.youtube.com/embed/Kb-C6nseGGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </div>
 
-<div class="iframe-container">
-  <iframe width="750" height="315" src="https://www.youtube.com/embed/1-cYJrsbTwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/slick-carousel@1.8.1/slick/slick.min.css,npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+<script src="https://cdn.jsdelivr.net/combine/npm/slick-carousel@1.8.1,npm/jquery@3.4.1"></script>
 
-<div class="iframe-container">
-  <iframe width="750" height="315" src="https://www.youtube.com/embed/JjXgdGN10kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="iframe-container">
-  <iframe width="750" height="315" src="https://www.youtube.com/embed/vGs1Hfh7HFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="iframe-container">
-  <iframe width="750" height="315" src="https://www.youtube.com/embed/Mv8ode8Yt5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="iframe-container">
-  <iframe width="750" height="315" src="https://www.youtube.com/embed/Kb-C6nseGGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<script>
+  $(document).ready(function(){
+    $('#videos-youtube-slick').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+  });
+</script>
