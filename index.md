@@ -10,8 +10,7 @@ title: Bay Area Meetup Tech Series
 
 <br>
 
-<p style="text-align:center">Who's missing our #AfterDeveloperWeek with Barbecue?
-<br>Check it out who wants some more:</p>
+<p style="text-align:center">The Bay Area Meetup Tech Series is an educational nonprofit initiative that aims to generate value for tech communities, we talk about technology both from the technical point of view and also about career within technology.</p>
 
 {% include widget_youtube.html %}
 
