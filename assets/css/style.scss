@@ -14,7 +14,7 @@ $green: #1ECD97;
 $gray: #bbbbbb;
 
 .slick-prev:before, .slick-next:before {
-  color: #000;
+  color: #000 !important;
 }
 
 input[type=email], input[type=text]{
