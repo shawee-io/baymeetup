@@ -13,14 +13,8 @@ body {
 $green: #1ECD97;
 $gray: #bbbbbb;
 
-@font-face
-{
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.eot');
-    src: url('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.woff') format('woff'), url('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.ttf') format('truetype'), url('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/fonts/slick.svg#slick') format('svg');
+.slick-prev:before, .slick-next:before {
+  color: #000;
 }
 
 input[type=email], input[type=text]{
