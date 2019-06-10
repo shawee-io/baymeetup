@@ -112,3 +112,10 @@ input[type=submit] {
     width: 0px !important;
   }
 }
+
+.page-header {
+  background-image: url(./bgheader.jpg), linear-gradient(120deg, #961f57, #159957);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
