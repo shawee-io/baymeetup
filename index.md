@@ -39,7 +39,7 @@ title: Bay Area Meetup Tech Series
 <br>
 
 <div class="head">
-  <h1>Next Meetups</h1>
+  <h1>Be in touch</h1>
 </div>
 <br>
 <div class="row">
@@ -87,10 +87,6 @@ Want to help our community to <b>grow</b>? Be a <a href="https://goo.gl/forms/6o
 </div>
 
 <br>
-
-<div class="head">
-  <h1>Be in touch</h1>
-</div>
 
 <p style="text-align:center">Want to sponsor or give us any feedback? Send us an email at <b>hi@baymeetup.com</b>
 <br><br>
