@@ -65,6 +65,10 @@ Wanna keep updated about our next events? Sign up!
 
 {% include widget_slack.html %}
 
+<h3>Join our Meetup.com group</h3>
+
+{% include widget_join_meetup.html %}
+
 </div>
 
 <div class="col-md-4">
