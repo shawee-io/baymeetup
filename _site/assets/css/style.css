@@ -349,3 +349,15 @@ input[type=submit]:after { content: "SUBMIT"; }
 .btn:hover { background-color: rgba(158, 182, 32, 0.8); }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { color: #9eb620; }
+
+.card-speaker { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 200px; height: 350px; padding: 8px; margin: 16px !important; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.1); }
+.card-speaker > img { border-radius: 1000px; }
+.card-speaker > .name { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; }
+.card-speaker > .name > h1 { font-size: 16px; margin: 0; margin-top: 16px; }
+.card-speaker > .name > p { font-size: 12px; margin: 0; text-align: left; margin-bottom: 16px; }
+.card-speaker > .name > img { align-self: center; }
+.card-speaker > .name > .grayImage { filter: invert(1); }
+.card-speaker > .content { margin-top: 16px; width: 100%; }
+.card-speaker > .content > ul { list-style-type: none; padding: 0; margin: 0; display: flex; align-items: center; justify-content: space-around; width: 100%; }
+.card-speaker > .content > ul .fa-linkedin { color: #0077B5; }
+.card-speaker > .content > ul .fa-twitter { color: #1da1f2; }
