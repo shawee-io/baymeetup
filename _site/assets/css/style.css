@@ -343,7 +343,7 @@ input[type=submit]:after { content: "SUBMIT"; }
 @media (max-width: 900px) { #img-col img { max-width: 50%; margin: 15px; }
   .align-center { text-align: center !important; }
   .head h1:before, .head h1:after { content: ""; height: 0px; width: 0px !important; } }
-.page-header { background: #f7f0de; color: #2b4b95; }
+.page-header { background: url(./BayMeetupLogo.svg) no-repeat, #f7f0de; background-size: contain; background-position: center center; color: #2b4b95; }
 
 .btn { color: white; background-color: #e86054; }
 .btn:hover { background-color: rgba(158, 182, 32, 0.8); }

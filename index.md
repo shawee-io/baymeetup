@@ -20,6 +20,10 @@ title: Bay Area Meetup Tech Series
 
 <br><br>
 
+{% include shawee_team.html %}
+
+<br><br>
+
 <div class="head">
   <h1>Fabulous sponsors</h1>
 </div>
